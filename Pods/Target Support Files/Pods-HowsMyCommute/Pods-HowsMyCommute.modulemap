@@ -1,0 +1,6 @@
+framework module Pods_HowsMyCommute {
+  umbrella header "Pods-HowsMyCommute-umbrella.h"
+
+  export *
+  module * { export * }
+}

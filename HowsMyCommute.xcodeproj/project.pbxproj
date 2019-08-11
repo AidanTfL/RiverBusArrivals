@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80B24C7817435E27FEB7882D /* Pods_HowsMyCommute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2886389290B67627A065FA /* Pods_HowsMyCommute.framework */; };
+		E2278C4F23003F99008D8C65 /* NaptanFerryPortDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2278C4E23003F99008D8C65 /* NaptanFerryPortDataModel.swift */; };
+		E2278C5123008B80008D8C65 /* JsonDeserialise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2278C5023008B80008D8C65 /* JsonDeserialise.swift */; };
 		E2E0F87622FDB33100CBE5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E0F87522FDB33100CBE5ED /* AppDelegate.swift */; };
 		E2E0F87822FDB33100CBE5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E0F87722FDB33100CBE5ED /* ViewController.swift */; };
 		E2E0F87B22FDB33100CBE5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E0F87922FDB33100CBE5ED /* Main.storyboard */; };
 		E2E0F87D22FDB33200CBE5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E0F87C22FDB33200CBE5ED /* Assets.xcassets */; };
 		E2E0F88022FDB33200CBE5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E0F87E22FDB33200CBE5ED /* LaunchScreen.storyboard */; };
+		E2E0F88B22FDBB7300CBE5ED /* RiverBusDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E0F88A22FDBB7300CBE5ED /* RiverBusDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2886389290B67627A065FA /* Pods_HowsMyCommute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowsMyCommute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF80AE2155A4AC78E3C51FC /* Pods-HowsMyCommute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowsMyCommute.debug.xcconfig"; path = "Target Support Files/Pods-HowsMyCommute/Pods-HowsMyCommute.debug.xcconfig"; sourceTree = "<group>"; };
+		A3FD89780DA7B95FCDC7960C /* Pods-HowsMyCommute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowsMyCommute.release.xcconfig"; path = "Target Support Files/Pods-HowsMyCommute/Pods-HowsMyCommute.release.xcconfig"; sourceTree = "<group>"; };
+		E2278C4E23003F99008D8C65 /* NaptanFerryPortDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaptanFerryPortDataModel.swift; sourceTree = "<group>"; };
+		E2278C5023008B80008D8C65 /* JsonDeserialise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDeserialise.swift; sourceTree = "<group>"; };
 		E2E0F87222FDB33100CBE5ED /* HowsMyCommute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowsMyCommute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E0F87522FDB33100CBE5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2E0F87722FDB33100CBE5ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		E2E0F87C22FDB33200CBE5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2E0F87F22FDB33200CBE5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2E0F88122FDB33200CBE5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E0F88A22FDBB7300CBE5ED /* RiverBusDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverBusDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B24C7817435E27FEB7882D /* Pods_HowsMyCommute.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C9C3D4ABB819ACA8474B6F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C2886389290B67627A065FA /* Pods_HowsMyCommute.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA68CF42754FCA52B8953FD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FF80AE2155A4AC78E3C51FC /* Pods-HowsMyCommute.debug.xcconfig */,
+				A3FD89780DA7B95FCDC7960C /* Pods-HowsMyCommute.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2E0F86922FDB33100CBE5ED = {
 			isa = PBXGroup;
 			children = (
 				E2E0F87422FDB33100CBE5ED /* HowsMyCommute */,
 				E2E0F87322FDB33100CBE5ED /* Products */,
+				AA68CF42754FCA52B8953FD0 /* Pods */,
+				5C9C3D4ABB819ACA8474B6F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,41 @@
 		E2E0F87422FDB33100CBE5ED /* HowsMyCommute */ = {
 			isa = PBXGroup;
 			children = (
-				E2E0F87522FDB33100CBE5ED /* AppDelegate.swift */,
-				E2E0F87722FDB33100CBE5ED /* ViewController.swift */,
-				E2E0F87922FDB33100CBE5ED /* Main.storyboard */,
+				E2E0F88922FDB41E00CBE5ED /* View */,
+				E2E0F88822FDB41500CBE5ED /* Model */,
+				E2E0F88722FDB40D00CBE5ED /* Controller */,
 				E2E0F87C22FDB33200CBE5ED /* Assets.xcassets */,
 				E2E0F87E22FDB33200CBE5ED /* LaunchScreen.storyboard */,
 				E2E0F88122FDB33200CBE5ED /* Info.plist */,
 			);
 			path = HowsMyCommute;
+			sourceTree = "<group>";
+		};
+		E2E0F88722FDB40D00CBE5ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2E0F87722FDB33100CBE5ED /* ViewController.swift */,
+				E2E0F87522FDB33100CBE5ED /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2E0F88822FDB41500CBE5ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2278C5023008B80008D8C65 /* JsonDeserialise.swift */,
+				E2E0F88A22FDBB7300CBE5ED /* RiverBusDataModel.swift */,
+				E2278C4E23003F99008D8C65 /* NaptanFerryPortDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2E0F88922FDB41E00CBE5ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2E0F87922FDB33100CBE5ED /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E0F88422FDB33200CBE5ED /* Build configuration list for PBXNativeTarget "HowsMyCommute" */;
 			buildPhases = (
+				82F177FF5E9643504B6E6C10 /* [CP] Check Pods Manifest.lock */,
 				E2E0F86E22FDB33100CBE5ED /* Sources */,
 				E2E0F86F22FDB33100CBE5ED /* Frameworks */,
 				E2E0F87022FDB33100CBE5ED /* Resources */,
+				9A3967FA9B50AE707DF61E53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +189,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82F177FF5E9643504B6E6C10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowsMyCommute-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3967FA9B50AE707DF61E53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowsMyCommute/Pods-HowsMyCommute-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowsMyCommute/Pods-HowsMyCommute-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HowsMyCommute/Pods-HowsMyCommute-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2E0F86E22FDB33100CBE5ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E2E0F87822FDB33100CBE5ED /* ViewController.swift in Sources */,
+				E2E0F88B22FDBB7300CBE5ED /* RiverBusDataModel.swift in Sources */,
 				E2E0F87622FDB33100CBE5ED /* AppDelegate.swift in Sources */,
+				E2278C5123008B80008D8C65 /* JsonDeserialise.swift in Sources */,
+				E2278C4F23003F99008D8C65 /* NaptanFerryPortDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +384,7 @@
 		};
 		E2E0F88522FDB33200CBE5ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF80AE2155A4AC78E3C51FC /* Pods-HowsMyCommute.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +403,7 @@
 		};
 		E2E0F88622FDB33200CBE5ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FD89780DA7B95FCDC7960C /* Pods-HowsMyCommute.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
