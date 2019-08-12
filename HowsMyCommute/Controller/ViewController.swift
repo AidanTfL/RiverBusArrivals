@@ -36,6 +36,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var lblNextArrival: UILabel!
     @IBOutlet weak var lblNextArrivalResult: UILabel!
     
+    @IBOutlet weak var boatTimesContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeArrivalsHidden()
@@ -48,6 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBAction func manualRefreshButtonPressed(_ sender: UIButton) {
         locationManager.startUpdatingLocation()
+        keepUpdatingBoatTimesContainerBackgroundColor()
     }
     
     //MARK: - UI Updates
@@ -232,4 +235,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         return formatter.string(from: currentDateTime)
     }
     
+    //MARK: - for novelty. To test that timer doesn't sleep thread and allows execution of other tasks
+    
+    func keepUpdatingBoatTimesContainerBackgroundColor(){
+        
+        let colours = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.purple]
+        
+        var count = colours.count-1
+        
+        //Start timer and execute code on repeat
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) {
+            (_:Timer)->Void in
+            
+            self.boatTimesContainer.backgroundColor = colours[colours.count-1 - count]
+            
+            count-=1
+            if count < 0 {
+                count = colours.count-1
+            }
+        }
+    }
 }
